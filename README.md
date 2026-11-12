@@ -2,34 +2,61 @@
 
 # CoolerFace
 
-[English](README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt.md)
+CoolerFace — приложение для Apple Watch (с компаньоном для iPhone), которое правит кеш MobileGestalt на часах и включает скрытые возможности watchOS: циферблаты Hermès и Ultra, Always On, кнопку действия, двойное касание, функции Siri и Apple Intelligence и другие. Это форк HermesEnabler с отдельной вкладкой «Бэкап» и дополнительными защитами от ошибок.
 
 ![](image.png)
 
-> Supported only on watchOS 27.0 through 27.3 beta 1.
+## Видео
 
-## Installation
+<!-- Вставьте сюда ссылку на видео или превью, например: [![CoolerFace](preview.png)](https://youtu.be/...) -->
+_Видео появится позже._
 
-### Install the IPA
+## Отличия от оригинала
 
-1. Download the IPA from [Releases](https://github.com/pookjw/HermesEnabler/releases).
-2. Install it with [Sideloadly](https://sideloadly.io).
-3. On your iPhone, open the **Watch** app and install **CoolerFace** from **My Watch → Apps**.
-4. Open **CoolerFace** on your Apple Watch and follow the steps in the app.
+- **Вкладка «Бэкап».** Показывает версию и сборку watchOS, дату последнего бэкапа MobileGestalt и кнопку «Откатить», которая возвращает исходный MobileGestalt из первого бэкапа.
+- **Автоматический бэкап.** Исходный бэкап создаётся сам при первом запуске на поддерживаемой версии; перед каждым изменением, как и в оригинале, делается ещё один.
+- **Проверка версии watchOS.** Если сборки нет в списке проверенных, CoolerFace ничего не меняет: раздел функций отключён, любая запись в MobileGestalt (включая восстановление) блокируется.
+- **Предупреждения об откате.** При любой ошибке CoolerFace предлагает сначала откатиться к исходному бэкапу, а пока изменения применены, напоминает откатиться перед удалением приложения.
+- Новые строки интерфейса переведены на русский.
 
-### Build with Xcode
+Логика правки MobileGestalt не изменена — она взята из HermesEnabler как есть.
 
-1. Open [CoolerFace.xcodeproj](CoolerFace.xcodeproj) in Xcode.
-2. Select your Apple Watch as the run destination and click **Run**.
-3. Open **CoolerFace** on your Apple Watch and follow the steps in the app.
+## Поддерживаемые версии
 
-## Cautions
+watchOS 27, только сборки с проверенной разметкой кеша: `24R359`, `24R364`, `24R365`, `24R5315i`, `24S118`, `24S132`, `24S5112a`, `24S5284h`. На любой другой сборке CoolerFace откроется, но ничего не изменит. Свою сборку можно посмотреть на вкладке «Бэкап».
 
-- In Sideloadly, disable **Use automatic bundle ID** and use a fixed Bundle Identifier. Keep the same Bundle Identifier and Apple ID for every update so the app can retain its existing data and backup.
-- Before deleting the app, always restore your MobileGestalt backup through the CoolerFace app.
+## Установка
 
-## Credits
+### Через Sideloadly
 
-This project incorporates code from [Gester](https://github.com/sasobhabha/Gester).
+1. Соберите IPA на Mac с Xcode:
+   ```bash
+   scripts/create_ipa.sh
+   ```
+   Файл появится в `build/ipa/CoolerFace.ipa` с Bundle ID `com.coolerwave.CoolerFace` (другой можно задать через `--bundle-id`). Сертификат и профиль для сборки не нужны — подпишет Sideloadly.
+   Готовый IPA оригинального HermesEnabler лежит в [Releases](https://github.com/pookjw/HermesEnabler/releases) — это сборка pookjw, а не CoolerFace.
+2. Установите IPA на iPhone через [Sideloadly](https://sideloadly.io). Отключите **Use automatic bundle ID** и укажите постоянный Bundle ID.
+3. На iPhone откройте приложение **Watch** → **Мои часы** → **Приложения** и установите **CoolerFace**.
+4. Откройте **CoolerFace** на часах: исходный бэкап создастся автоматически.
 
-Use at your own risk.
+### Через Xcode
+
+1. Откройте [CoolerFace.xcodeproj](CoolerFace.xcodeproj) в Xcode.
+2. В настройках проекта задайте свою команду (Team) и Bundle ID (`COMPANION_BUNDLE_IDENTIFIER`).
+3. Выберите схему **CoolerFace**, в качестве устройства — свои Apple Watch, и нажмите **Run**.
+4. Откройте **CoolerFace** на часах и проверьте вкладку «Бэкап».
+
+## Риски
+
+CoolerFace меняет системный файл watchOS. Используйте на свой страх и риск.
+
+- **Неподдерживаемая версия.** Обновление watchOS может изменить разметку кеша. CoolerFace блокирует запись на неизвестных сборках, но не обновляйте часы с применёнными изменениями — сначала откатитесь.
+- **Удаление приложения.** Вместе с CoolerFace удаляются и бэкапы. Перед удалением обязательно нажмите «Откатить» на вкладке «Бэкап» и перезапустите часы.
+- **Сохраняйте Bundle ID и Apple ID.** При обновлении через Sideloadly используйте тот же Bundle ID и тот же Apple ID, иначе приложение потеряет данные и бэкапы.
+- **Ошибки.** Если изменение не применилось или часы ведут себя странно, сначала откатитесь к исходному бэкапу, потом пробуйте снова.
+- Некоторые функции зависят от железа и сервисов Apple и могут не заработать даже после включения.
+
+## Благодарности
+
+- [HermesEnabler](https://github.com/pookjw/HermesEnabler) от pookjw — основа проекта (лицензия MIT, см. [LICENSE](LICENSE)).
+- В проекте используется код из [Gester](https://github.com/sasobhabha/Gester).
