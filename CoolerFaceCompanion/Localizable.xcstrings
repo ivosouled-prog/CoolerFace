@@ -1222,214 +1222,214 @@
         }
       }
     },
-    "Find HermesEnabler in the list of apps." : {
+    "Find CoolerFace in the list of apps." : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Suchen Sie HermesEnabler in der Liste der Apps."
+            "value" : "Suchen Sie CoolerFace in der Liste der Apps."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Busque HermesEnabler en la lista de aplicaciones."
+            "value" : "Busque CoolerFace en la lista de aplicaciones."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Recherchez HermesEnabler dans la liste des applications."
+            "value" : "Recherchez CoolerFace dans la liste des applications."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "アプリのリストでHermesEnablerを見つけます。"
+            "value" : "アプリのリストでCoolerFaceを見つけます。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "앱 목록에서 HermesEnabler를 찾으세요."
+            "value" : "앱 목록에서 CoolerFace를 찾으세요."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Encontre HermesEnabler na lista de aplicativos."
+            "value" : "Encontre CoolerFace na lista de aplicativos."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在应用程序列表中找到 HermesEnabler。"
+            "value" : "在应用程序列表中找到 CoolerFace。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在應用程式列表中找到 HermesEnabler。"
+            "value" : "在應用程式列表中找到 CoolerFace。"
           }
         }
       }
     },
-    "HermesEnabler" : {
+    "CoolerFace" : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         }
       }
     },
-    "HermesEnabler is connected" : {
+    "CoolerFace is connected" : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler ist verbunden"
+            "value" : "CoolerFace ist verbunden"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler está conectado"
+            "value" : "CoolerFace está conectado"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler est connecté"
+            "value" : "CoolerFace est connecté"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler が接続されました"
+            "value" : "CoolerFace が接続されました"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler가 연결되었습니다"
+            "value" : "CoolerFace가 연결되었습니다"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler está conectado"
+            "value" : "CoolerFace está conectado"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler 已连接"
+            "value" : "CoolerFace 已连接"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler 已連接"
+            "value" : "CoolerFace 已連接"
           }
         }
       }
     },
-    "HermesEnabler is installed on the iPhone, but the watch app is not installed." : {
+    "CoolerFace is installed on the iPhone, but the watch app is not installed." : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler ist auf dem iPhone installiert, die Watch-App jedoch nicht."
+            "value" : "CoolerFace ist auf dem iPhone installiert, die Watch-App jedoch nicht."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler está instalado en el iPhone, pero la aplicación del reloj no está instalada."
+            "value" : "CoolerFace está instalado en el iPhone, pero la aplicación del reloj no está instalada."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler est installé sur l'iPhone, mais l'application montre n'est pas installée."
+            "value" : "CoolerFace est installé sur l'iPhone, mais l'application montre n'est pas installée."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "iPhoneにはHermesEnablerはインストールされていますが、Watchアプリはインストールされていません。"
+            "value" : "iPhoneにはCoolerFaceはインストールされていますが、Watchアプリはインストールされていません。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "iPhone에 HermesEnabler가 설치되어 있지만 시계 앱이 설치되어 있지 않습니다."
+            "value" : "iPhone에 CoolerFace가 설치되어 있지만 시계 앱이 설치되어 있지 않습니다."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O HermesEnabler está instalado no iPhone, mas o aplicativo do relógio não está instalado."
+            "value" : "O CoolerFace está instalado no iPhone, mas o aplicativo do relógio não está instalado."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "iPhone上已安装HermesEnabler，但未安装手表应用程序。"
+            "value" : "iPhone上已安装CoolerFace，但未安装手表应用程序。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "iPhone上已安裝HermesEnabler，但未安裝手錶應用程式。"
+            "value" : "iPhone上已安裝CoolerFace，但未安裝手錶應用程式。"
           }
         }
       }
@@ -1487,55 +1487,55 @@
         }
       }
     },
-    "How to install HermesEnabler" : {
+    "How to install CoolerFace" : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "So installieren Sie HermesEnabler"
+            "value" : "So installieren Sie CoolerFace"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Cómo instalar HermesEnabler"
+            "value" : "Cómo instalar CoolerFace"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Comment installer HermesEnabler"
+            "value" : "Comment installer CoolerFace"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnablerのインストール方法"
+            "value" : "CoolerFaceのインストール方法"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler 설치 방법"
+            "value" : "CoolerFace 설치 방법"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Como instalar o HermesEnabler"
+            "value" : "Como instalar o CoolerFace"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如何安装 HermesEnabler"
+            "value" : "如何安装 CoolerFace"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "如何安裝 HermesEnabler"
+            "value" : "如何安裝 CoolerFace"
           }
         }
       }
@@ -2337,108 +2337,108 @@
         }
       }
     },
-    "Open HermesEnabler on your Apple Watch." : {
+    "Open CoolerFace on your Apple Watch." : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öffnen Sie HermesEnabler auf Ihrer Apple Watch."
+            "value" : "Öffnen Sie CoolerFace auf Ihrer Apple Watch."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abra HermesEnabler en su Apple Watch."
+            "value" : "Abra CoolerFace en su Apple Watch."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ouvrez HermesEnabler sur votre Apple Watch."
+            "value" : "Ouvrez CoolerFace sur votre Apple Watch."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apple WatchでHermesEnablerを開きます。"
+            "value" : "Apple WatchでCoolerFaceを開きます。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apple Watch에서 HermesEnabler를 엽니다."
+            "value" : "Apple Watch에서 CoolerFace를 엽니다."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abra o HermesEnabler no seu Apple Watch."
+            "value" : "Abra o CoolerFace no seu Apple Watch."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在 Apple Watch 上打开 HermesEnabler。"
+            "value" : "在 Apple Watch 上打开 CoolerFace。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在 Apple Watch 上開啟 HermesEnabler。"
+            "value" : "在 Apple Watch 上開啟 CoolerFace。"
           }
         }
       }
     },
-    "Open HermesEnabler on your Apple Watch. If it is not installed, open the Watch app on your iPhone and install it from Available Apps." : {
+    "Open CoolerFace on your Apple Watch. If it is not installed, open the Watch app on your iPhone and install it from Available Apps." : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Öffne HermesEnabler auf deiner Apple Watch. Wenn die App nicht installiert ist, öffne auf deinem iPhone die App „Watch“ und installiere sie unter „Verfügbare Apps“."
+            "value" : "Öffne CoolerFace auf deiner Apple Watch. Wenn die App nicht installiert ist, öffne auf deinem iPhone die App „Watch“ und installiere sie unter „Verfügbare Apps“."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abre HermesEnabler en tu Apple Watch. Si no está instalada, abre la app Watch en el iPhone y, en «Apps disponibles», instálala."
+            "value" : "Abre CoolerFace en tu Apple Watch. Si no está instalada, abre la app Watch en el iPhone y, en «Apps disponibles», instálala."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ouvrez HermesEnabler sur votre Apple Watch. S’il n’est pas installé, ouvrez l’app Watch sur votre iPhone, puis installez-le depuis « Apps disponibles »."
+            "value" : "Ouvrez CoolerFace sur votre Apple Watch. S’il n’est pas installé, ouvrez l’app Watch sur votre iPhone, puis installez-le depuis « Apps disponibles »."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apple WatchでHermesEnablerを開きます。インストールされていない場合は、iPhoneのWatchアプリを開き、「利用可能なアプリ」からインストールしてください。"
+            "value" : "Apple WatchでCoolerFaceを開きます。インストールされていない場合は、iPhoneのWatchアプリを開き、「利用可能なアプリ」からインストールしてください。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apple Watch에서 HermesEnabler를 여세요. 설치되어 있지 않다면 iPhone에서 Watch 앱을 열고 ‘사용 가능한 앱’에서 설치하세요."
+            "value" : "Apple Watch에서 CoolerFace를 여세요. 설치되어 있지 않다면 iPhone에서 Watch 앱을 열고 ‘사용 가능한 앱’에서 설치하세요."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Abra o HermesEnabler no Apple Watch. Se não estiver instalado, abra a app Watch no iPhone e instale-o em «Apps disponíveis»."
+            "value" : "Abra o CoolerFace no Apple Watch. Se não estiver instalado, abra a app Watch no iPhone e instale-o em «Apps disponíveis»."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在 Apple Watch 上打开 HermesEnabler。若尚未安装，请在 iPhone 上打开 Watch App，并从“可用 App”中安装。"
+            "value" : "在 Apple Watch 上打开 CoolerFace。若尚未安装，请在 iPhone 上打开 Watch App，并从“可用 App”中安装。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "在 Apple Watch 上開啟 HermesEnabler。若尚未安裝，請在 iPhone 上開啟 Watch App，並從「可用 App」中安裝。"
+            "value" : "在 Apple Watch 上開啟 CoolerFace。若尚未安裝，請在 iPhone 上開啟 Watch App，並從「可用 App」中安裝。"
           }
         }
       }
@@ -2496,55 +2496,55 @@
         }
       }
     },
-    "Pair your Apple Watch with this iPhone to use HermesEnabler." : {
+    "Pair your Apple Watch with this iPhone to use CoolerFace." : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Koppeln Sie Ihre Apple Watch mit diesem iPhone, um HermesEnabler zu verwenden."
+            "value" : "Koppeln Sie Ihre Apple Watch mit diesem iPhone, um CoolerFace zu verwenden."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Empareje su Apple Watch con este iPhone para usar HermesEnabler."
+            "value" : "Empareje su Apple Watch con este iPhone para usar CoolerFace."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Associez votre Apple Watch à cet iPhone pour utiliser HermesEnabler."
+            "value" : "Associez votre Apple Watch à cet iPhone pour utiliser CoolerFace."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apple Watch をこの iPhone とペアリングして、HermesEnabler を使用します。"
+            "value" : "Apple Watch をこの iPhone とペアリングして、CoolerFace を使用します。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler를 사용하려면 Apple Watch를 이 iPhone과 페어링하세요."
+            "value" : "CoolerFace를 사용하려면 Apple Watch를 이 iPhone과 페어링하세요."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Emparelhe seu Apple Watch com este iPhone para usar o HermesEnabler."
+            "value" : "Emparelhe seu Apple Watch com este iPhone para usar o CoolerFace."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "将您的 Apple Watch 与此 iPhone 配对以使用 HermesEnabler。"
+            "value" : "将您的 Apple Watch 与此 iPhone 配对以使用 CoolerFace。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "將您的 Apple Watch 與此 iPhone 配對以使用 HermesEnabler。"
+            "value" : "將您的 Apple Watch 與此 iPhone 配對以使用 CoolerFace。"
           }
         }
       }
@@ -3400,55 +3400,55 @@
         }
       }
     },
-    "The watch app is installed but is not connected. Open HermesEnabler on your Apple Watch." : {
+    "The watch app is installed but is not connected. Open CoolerFace on your Apple Watch." : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Die Watch-App ist installiert, aber nicht verbunden. Öffnen Sie HermesEnabler auf Ihrer Apple Watch."
+            "value" : "Die Watch-App ist installiert, aber nicht verbunden. Öffnen Sie CoolerFace auf Ihrer Apple Watch."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "La aplicación del reloj está instalada pero no está conectada. Abra HermesEnabler en su Apple Watch."
+            "value" : "La aplicación del reloj está instalada pero no está conectada. Abra CoolerFace en su Apple Watch."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "L'application Watch est installée mais n'est pas connectée. Ouvrez HermesEnabler sur votre Apple Watch."
+            "value" : "L'application Watch est installée mais n'est pas connectée. Ouvrez CoolerFace sur votre Apple Watch."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Watch アプリはインストールされていますが、接続されていません。 Apple WatchでHermesEnablerを開きます。"
+            "value" : "Watch アプリはインストールされていますが、接続されていません。 Apple WatchでCoolerFaceを開きます。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "시계 앱이 설치되었지만 연결되지 않았습니다. Apple Watch에서 HermesEnabler를 엽니다."
+            "value" : "시계 앱이 설치되었지만 연결되지 않았습니다. Apple Watch에서 CoolerFace를 엽니다."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "O aplicativo do relógio está instalado, mas não está conectado. Abra o HermesEnabler no seu Apple Watch."
+            "value" : "O aplicativo do relógio está instalado, mas não está conectado. Abra o CoolerFace no seu Apple Watch."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "手表应用程序已安装但未连接。在 Apple Watch 上打开 HermesEnabler。"
+            "value" : "手表应用程序已安装但未连接。在 Apple Watch 上打开 CoolerFace。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "手錶應用程式已安裝但未連接。在 Apple Watch 上開啟 HermesEnabler。"
+            "value" : "手錶應用程式已安裝但未連接。在 Apple Watch 上開啟 CoolerFace。"
           }
         }
       }
@@ -3781,55 +3781,55 @@
         }
       }
     },
-    "Your Apple Watch is connected to HermesCompanion." : {
+    "Your Apple Watch is connected to CoolerFaceCompanion." : {
       "extractionState" : "stale",
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Ihre Apple Watch ist mit HermesCompanion verbunden."
+            "value" : "Ihre Apple Watch ist mit CoolerFaceCompanion verbunden."
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Su Apple Watch está conectado a HermesCompanion."
+            "value" : "Su Apple Watch está conectado a CoolerFaceCompanion."
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Votre Apple Watch est connectée à HermesCompanion."
+            "value" : "Votre Apple Watch est connectée à CoolerFaceCompanion."
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apple Watch が HermesCompanion に接続されています。"
+            "value" : "Apple Watch が CoolerFaceCompanion に接続されています。"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Apple Watch가 HermesCompanion에 연결되었습니다."
+            "value" : "Apple Watch가 CoolerFaceCompanion에 연결되었습니다."
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "Seu Apple Watch está conectado ao HermesCompanion."
+            "value" : "Seu Apple Watch está conectado ao CoolerFaceCompanion."
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "您的 Apple Watch 已连接到 HermesCompanion。"
+            "value" : "您的 Apple Watch 已连接到 CoolerFaceCompanion。"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "您的 Apple Watch 已連接到 HermesCompanion。"
+            "value" : "您的 Apple Watch 已連接到 CoolerFaceCompanion。"
           }
         }
       }

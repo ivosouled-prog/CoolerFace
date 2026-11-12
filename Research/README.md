@@ -1,6 +1,6 @@
 # Research notes
 
-These notes document the investigation behind HermesEnabler2 as of **2026-11-12**, based on the repository at commit `78188c74d284949deb4004a96efa84eb1a7017a2` and the locally preserved physical-device watchOS OTA material. They describe observed behavior and the implementation at that point; they are not Apple documentation.
+These notes document the investigation behind CoolerFace as of **2026-11-12**, based on the repository at commit `78188c74d284949deb4004a96efa84eb1a7017a2` and the locally preserved physical-device watchOS OTA material. They describe observed behavior and the implementation at that point; they are not Apple documentation.
 
 - [MobileGestalt cache layout and offsets](MobileGestalt/README.md) — why the app uses different write paths, cache layout, and build-specific values.
 - [Recovery and backups](Recovery/README.md) — how recovery candidates are derived, how backups are used, and what remains unverified.

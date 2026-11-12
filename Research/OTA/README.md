@@ -67,13 +67,13 @@ The analysis used [blacktop/ipsw](https://github.com/blacktop/ipsw), version `3.
 
 3. Inspect `libMobileGestalt.dylib` for the relevant opaque key identifier and its descriptor. Record the selected architecture, descriptor index and type, callback address, and how the address maps into the extracted Mach-O. For the layouts studied here, compare the descriptor index to `CacheData`'s eight-byte value slots and its presence region, then independently check the resulting byte positions and UUID against a suitable cache of the **same** build. Hash the extracted library and preserve the disassembly needed to explain each conclusion.
 4. Trace the callback and its dependencies. Determine whether it reads a device-tree property, another global MG answer, a model check, or per-device `syscfg`. Compare the template with a runtime property only on a device you are authorized to inspect. Record absent properties and access failures separately.
-5. Check [`MGOffsets.plist`](../../HermesEnabler2/MGOffsets.plist) and [`MGDefaults.plist`](../../HermesEnabler2/MGDefaults.plist) for the exact build. Validate UUID, length, bounds, presence offsets, value types and callback semantics. A copied adjacent-build layout is a hypothesis, not an independently verified offset.
+5. Check [`MGOffsets.plist`](../../CoolerFace/MGOffsets.plist) and [`MGDefaults.plist`](../../CoolerFace/MGDefaults.plist) for the exact build. Validate UUID, length, bounds, presence offsets, value types and callback semantics. A copied adjacent-build layout is a hypothesis, not an independently verified offset.
 6. Re-run the existing parser tests and watchOS build after changes:
 
    ```sh
    clang -std=c11 -Wall -Wextra -Werror tests/BQRecoveryValidationTests.c -o /tmp/hermes-recovery-tests
    /tmp/hermes-recovery-tests
-   xcodebuild -project HermesEnabler2.xcodeproj -scheme HermesEnabler2 -configuration Debug -sdk watchos -destination 'generic/platform=watchOS' CODE_SIGNING_ALLOWED=NO build
+   xcodebuild -project CoolerFace.xcodeproj -scheme CoolerFace -configuration Debug -sdk watchos -destination 'generic/platform=watchOS' CODE_SIGNING_ALLOWED=NO build
    ```
 
    These checks do not validate private API access, cache writes, face availability, or recovery on real hardware. Record those tests separately if they are performed.

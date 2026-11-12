@@ -32,14 +32,14 @@ struct WatchInstallationCard: View {
                 Divider()
 
                 Label(
-                    "How to install HermesEnabler",
+                    "How to install CoolerFace",
                     systemImage: "applewatch"
                 )
                 .font(.subheadline.weight(.semibold))
 
                 VStack(alignment: .leading, spacing: 8) {
                     Label("Open the Watch app on your iPhone.", systemImage: "1.circle")
-                    Label("Find HermesEnabler in the list of apps.", systemImage: "2.circle")
+                    Label("Find CoolerFace in the list of apps.", systemImage: "2.circle")
                     Label("Tap Install.", systemImage: "3.circle")
                     Label("Once installed, open the app on your Apple Watch.", systemImage: "4.circle")
                 }
@@ -50,7 +50,7 @@ struct WatchInstallationCard: View {
                 Divider()
 
                 Label(
-                    "Open HermesEnabler on your Apple Watch.",
+                    "Open CoolerFace on your Apple Watch.",
                     systemImage: "hand.tap"
                 )
                 .font(.footnote)
@@ -75,7 +75,7 @@ struct WatchInstallationCard: View {
         }
 
         if watchManager.isReachable {
-            return "HermesEnabler is connected"
+            return "CoolerFace is connected"
         }
 
         return "App installed"
@@ -83,18 +83,18 @@ struct WatchInstallationCard: View {
 
     private var installationMessage: LocalizedStringKey {
         if !watchManager.isPaired {
-            return "Pair your Apple Watch with this iPhone to use HermesEnabler."
+            return "Pair your Apple Watch with this iPhone to use CoolerFace."
         }
 
         if !watchManager.isWatchAppInstalled {
-            return "HermesEnabler is installed on the iPhone, but the watch app is not installed."
+            return "CoolerFace is installed on the iPhone, but the watch app is not installed."
         }
 
         if watchManager.isReachable {
-            return "Your Apple Watch is connected to HermesCompanion."
+            return "Your Apple Watch is connected to CoolerFaceCompanion."
         }
 
-        return "The watch app is installed but is not connected. Open HermesEnabler on your Apple Watch."
+        return "The watch app is installed but is not connected. Open CoolerFace on your Apple Watch."
     }
 
     private var installationIcon: String {

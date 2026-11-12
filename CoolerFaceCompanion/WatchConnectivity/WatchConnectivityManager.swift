@@ -1,6 +1,6 @@
 //
 //  WatchConnectivityManager.swift
-//  HermesEnabler2
+//  CoolerFace
 //
 //
 
@@ -90,7 +90,7 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
 
         let directory = support
             .appendingPathComponent(
-                "HermesEnabler",
+                "CoolerFace",
                 isDirectory: true
             )
             .appendingPathComponent(
@@ -266,7 +266,7 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
               dictionary["CacheExtra"] is [String: Any],
               dictionary["CacheData"] is Data else {
             throw NSError(
-                domain: "HermesCompanion.Backup",
+                domain: "CoolerFaceCompanion.Backup",
                 code: 1,
                 userInfo: [
                     NSLocalizedDescriptionKey:
@@ -334,7 +334,7 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
 
         guard !receivedData.isEmpty else {
             throw NSError(
-                domain: "HermesCompanion.Backup",
+                domain: "CoolerFaceCompanion.Backup",
                 code: 1,
                 userInfo: [
                     NSLocalizedDescriptionKey: String(localized: "The received file is empty.")
@@ -347,7 +347,7 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
         let receivedHash = sha256(receivedData)
         if let expectedHash = metadata?["sha256"] as? String,
            expectedHash.lowercased() != receivedHash {
-            throw NSError(domain: "HermesCompanion.Backup", code: 3,
+            throw NSError(domain: "CoolerFaceCompanion.Backup", code: 3,
                           userInfo: [NSLocalizedDescriptionKey: String(localized: "The received backup does not match the watch's checksum.")])
         }
         // Session activation can resend the same original backup. Reuse an
@@ -374,7 +374,7 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
             try? FileManager.default.removeItem(at: destinationURL)
 
             throw NSError(
-                domain: "HermesCompanion.Backup",
+                domain: "CoolerFaceCompanion.Backup",
                 code: 2,
                 userInfo: [
                     NSLocalizedDescriptionKey:
@@ -439,7 +439,7 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
 
         guard sourceURL.pathExtension.lowercased() == "plist" else {
             throw NSError(
-                domain: "HermesCompanion.Import",
+                domain: "CoolerFaceCompanion.Import",
                 code: 10,
                 userInfo: [
                     NSLocalizedDescriptionKey:
@@ -475,7 +475,7 @@ final class WatchConnectivityManager: NSObject, ObservableObject {
             try? FileManager.default.removeItem(at: destinationURL)
 
             throw NSError(
-                domain: "HermesCompanion.Import",
+                domain: "CoolerFaceCompanion.Import",
                 code: 11,
                 userInfo: [
                     NSLocalizedDescriptionKey:
@@ -732,7 +732,7 @@ extension WatchConnectivityManager: WCSessionDelegate {
                 "fileName": fileURL.lastPathComponent,
                 "sha256": hash,
                 "transferDate": Date().timeIntervalSince1970,
-                "source": "HermesCompanion"
+                "source": "CoolerFaceCompanion"
             ]
 
             let transfer = session.transferFile(

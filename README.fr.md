@@ -1,4 +1,4 @@
-# HermesEnabler 2
+# CoolerFace
 
 [English](README.md) · [한국어](README.ko.md) · [简体中文](README.zh-CN.md) · [繁體中文](README.zh-TW.md) · [日本語](README.ja.md) · [Español](README.es.md) · [Français](README.fr.md) · [Deutsch](README.de.md) · [Português](README.pt.md)
 
@@ -12,19 +12,19 @@
 
 1. Téléchargez l’IPA depuis [Releases](https://github.com/pookjw/HermesEnabler/releases).
 2. Installez-le avec [Sideloadly](https://sideloadly.io).
-3. Sur l’iPhone, ouvrez l’app **Watch → Ma montre → Apps** et installez **HermesEnabler2**.
-4. Ouvrez **HermesEnabler2** sur l’Apple Watch et suivez les étapes indiquées dans l’app.
+3. Sur l’iPhone, ouvrez l’app **Watch → Ma montre → Apps** et installez **CoolerFace**.
+4. Ouvrez **CoolerFace** sur l’Apple Watch et suivez les étapes indiquées dans l’app.
 
 ### Compiler avec Xcode
 
-1. Ouvrez [HermesEnabler2.xcodeproj](HermesEnabler2.xcodeproj) dans Xcode.
+1. Ouvrez [CoolerFace.xcodeproj](CoolerFace.xcodeproj) dans Xcode.
 2. Sélectionnez l’Apple Watch comme destination d’exécution, puis cliquez sur **Run**.
-3. Ouvrez **HermesEnabler2** sur l’Apple Watch et suivez les étapes indiquées dans l’app.
+3. Ouvrez **CoolerFace** sur l’Apple Watch et suivez les étapes indiquées dans l’app.
 
 ## Précautions
 
 - Dans Sideloadly, désactivez **Use automatic bundle ID** et utilisez un Bundle Identifier fixe. Utilisez le même Bundle Identifier et le même Apple ID à chaque mise à jour pour conserver les données et la sauvegarde existantes.
-- Avant de supprimer l’app, restaurez impérativement votre sauvegarde MobileGestalt depuis l’app HermesEnabler2.
+- Avant de supprimer l’app, restaurez impérativement votre sauvegarde MobileGestalt depuis l’app CoolerFace.
 
 ## Crédits
 

@@ -7191,54 +7191,54 @@
         }
       }
     },
-    "HermesEnabler" : {
+    "CoolerFace" : {
       "localizations" : {
         "de" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "es" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "fr" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "ja" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "ko" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "pt" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "zh-Hans" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         },
         "zh-Hant" : {
           "stringUnit" : {
             "state" : "translated",
-            "value" : "HermesEnabler"
+            "value" : "CoolerFace"
           }
         }
       }

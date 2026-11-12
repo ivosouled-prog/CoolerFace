@@ -2,7 +2,7 @@
 
 ## Scope and terminology
 
-HermesEnabler2 modifies the on-device MobileGestalt cache plist using the file access mechanism in [`BQCore.m`](../../HermesEnabler2/BQCore.m). The cache has at least three fields relevant to this investigation:
+CoolerFace modifies the on-device MobileGestalt cache plist using the file access mechanism in [`BQCore.m`](../../CoolerFace/BQCore.m). The cache has at least three fields relevant to this investigation:
 
 - `CacheData`: a binary data blob with build-dependent positions for cached values and presence markers.
 - `CacheExtra`: a dictionary whose entries use opaque identifiers associated with MG keys.
@@ -25,11 +25,11 @@ This is **not** a claim that every MG key requires an offset. Most Boolean featu
 | `DeviceBrand` | `fuKL2rMywRgQF1wowOA/cg` | `1` | Write the four-byte value at `DeviceBrandOffset`; remove this override when enabling. |
 | `main-screen-class` | `fdh+s6j3VijuyrK7xLjd7g` | `29` (existing) or `38` (alternative) | Write the selected four-byte value at `ScreenClassOffset`; remove this override when enabling. |
 
-These values are **activation overrides**, not factory defaults. The `38` alternative is offered only on analyzed builds; `24R359` remains limited to the existing `29` because its physical OTA was not verified. See [`MGDefaults.plist`](../../HermesEnabler2/MGDefaults.plist). Neither a value of `29` nor a visible switch proves that all face bundles, layouts, or compatibility checks are satisfied.
+These values are **activation overrides**, not factory defaults. The `38` alternative is offered only on analyzed builds; `24R359` remains limited to the existing `29` because its physical OTA was not verified. See [`MGDefaults.plist`](../../CoolerFace/MGDefaults.plist). Neither a value of `29` nor a visible switch proves that all face bundles, layouts, or compatibility checks are satisfied.
 
 ## Layouts recorded in the app
 
-The canonical machine-readable table is [`MGOffsets.plist`](../../HermesEnabler2/MGOffsets.plist). Values below are byte offsets in `CacheData`, shown in hexadecimal. The selected Boolean descriptors use an eight-byte slot at `8 * index`, with a presence byte at `PresenceBase + index` in these analyzed layouts; this must be revalidated on another build.
+The canonical machine-readable table is [`MGOffsets.plist`](../../CoolerFace/MGOffsets.plist). Values below are byte offsets in `CacheData`, shown in hexadecimal. The selected Boolean descriptors use an eight-byte slot at `8 * index`, with a presence byte at `PresenceBase + index` in these analyzed layouts; this must be revalidated on another build.
 
 | Builds | UUID | Length | Brand value / presence | Screen value / presence | Presence base |
 | --- | --- | ---: | --- | --- | ---: |

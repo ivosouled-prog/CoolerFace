@@ -33,7 +33,7 @@ struct ContentView: View {
                 .frame(maxWidth: .infinity)
             }
             .background(Color(uiColor: .systemGroupedBackground))
-            .navigationTitle("HermesEnabler")
+            .navigationTitle("CoolerFace")
             .navigationBarTitleDisplayMode(.large)
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
@@ -59,7 +59,7 @@ struct ContentView: View {
         ) { result in
             handleImport(result)
         }
-        .alert("HermesEnabler", isPresented: $showingAlert) {
+        .alert("CoolerFace", isPresented: $showingAlert) {
             Button("OK", role: .cancel) { }
         } message: {
             Text(alertMessage)

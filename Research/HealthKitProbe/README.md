@@ -1,6 +1,6 @@
 # HealthKit input probe
 
-This standalone watchOS research app is based on the public-input probe contributed by [belcebu666 in PR #48](https://github.com/pookjw/HermesEnabler/pull/48). It is separate from the HermesEnabler app and does not enable Apple Readiness or compute a readiness score.
+This standalone watchOS research app is based on the public-input probe contributed by [belcebu666 in PR #48](https://github.com/pookjw/HermesEnabler/pull/48). It is separate from the CoolerFace app and does not enable Apple Readiness or compute a readiness score.
 
 ## What it does
 

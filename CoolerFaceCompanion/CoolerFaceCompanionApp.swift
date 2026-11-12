@@ -1,7 +1,7 @@
 import SwiftUI
 
 @main
-struct HermesCompanionApp: App {
+struct CoolerFaceCompanionApp: App {
 
     var body: some Scene {
         WindowGroup {

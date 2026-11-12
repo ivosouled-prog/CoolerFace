@@ -1,7 +1,7 @@
 from pathlib import Path
 import plistlib
 
-root = Path(__file__).resolve().parent.parent / "HermesEnabler2"
+root = Path(__file__).resolve().parent.parent / "CoolerFace"
 with (root / "MGOffsets.plist").open("rb") as f:
     offsets = plistlib.load(f)["Builds"]
 with (root / "MGDefaults.plist").open("rb") as f:

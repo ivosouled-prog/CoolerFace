@@ -2,7 +2,7 @@
 
 ## Backup lifecycle
 
-The UI requires the user to explicitly create the initial backup before reaching the main settings screen. [`BQCore.m`](../../HermesEnabler2/BQCore.m) writes it as `OriginalGestalt.plist` in the app's Documents directory and will not overwrite an existing file at that path. It validates the presence of `CacheData` and `CacheExtra`, not whether the contents are truly factory-original.
+The UI requires the user to explicitly create the initial backup before reaching the main settings screen. [`BQCore.m`](../../CoolerFace/BQCore.m) writes it as `OriginalGestalt.plist` in the app's Documents directory and will not overwrite an existing file at that path. It validates the presence of `CacheData` and `CacheExtra`, not whether the contents are truly factory-original.
 
 Before `BQSaveGestalt` writes a changed cache, it creates a separate `auto-<UUID>.plist` backup under `MGBackups`. Manual backups also use that directory. A full backup restore creates an automatic backup first and checks cache UUID and data length; it then compares the restored file with the selected backup. Automatic backups capture the *current state before a write*. They do not automatically replace or become the initial backup, and a previously modified current cache produces a modified backup.
 
@@ -27,7 +27,7 @@ A cache miss is **not** a guarantee of independence: a handler can call another 
 
 ## DeviceBrand
 
-Static analysis of the physical OTA handler tied `DeviceBrand` to the `marketing-software-behavior` property under `IODeviceTree:/chosen`. The app reads byte 2 from a data property of at least four bytes. For the studied release builds, values 1–2 are accepted; for `24S5284h`, 1–3 are accepted; other raw values map to 0. The upper limit is `MaxDeviceBrand` in [`MGDefaults.plist`](../../HermesEnabler2/MGDefaults.plist): it is a validation bound, **not** a value written as the device's default. The app requires the calculated value to match the isolated `DeviceBrand` answer and validates the expected cache slot before restoring it.
+Static analysis of the physical OTA handler tied `DeviceBrand` to the `marketing-software-behavior` property under `IODeviceTree:/chosen`. The app reads byte 2 from a data property of at least four bytes. For the studied release builds, values 1–2 are accepted; for `24S5284h`, 1–3 are accepted; other raw values map to 0. The upper limit is `MaxDeviceBrand` in [`MGDefaults.plist`](../../CoolerFace/MGDefaults.plist): it is a validation bound, **not** a value written as the device's default. The app requires the calculated value to match the isolated `DeviceBrand` answer and validates the expected cache slot before restoring it.
 
 The OTA device-tree template records the source as `syscfg/MkBS`, so the OTA alone does not identify a particular watch's original brand. A model identifier cannot safely stand in for whether an individual unit was originally Hermès. `HermesEnabledDeviceBrand = 1` is the activation override, not a universally correct value to restore.
 

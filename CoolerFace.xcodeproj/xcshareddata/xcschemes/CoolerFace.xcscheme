@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "4F4A2C4A30A2155900A2BFDC"
-               BuildableName = "HermesEnabler2.app"
-               BlueprintName = "HermesEnabler2"
-               ReferencedContainer = "container:HermesEnabler2.xcodeproj">
+               BuildableName = "CoolerFace.app"
+               BlueprintName = "CoolerFace"
+               ReferencedContainer = "container:CoolerFace.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -46,8 +46,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F4A2C4A30A2155900A2BFDC"
-            BuildableName = "HermesEnabler2.app"
-            ReferencedContainer = "container:HermesEnabler2.xcodeproj">
+            BuildableName = "CoolerFace.app"
+            ReferencedContainer = "container:CoolerFace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,8 +62,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "4F4A2C4A30A2155900A2BFDC"
-            BuildableName = "HermesEnabler2.app"
-            ReferencedContainer = "container:HermesEnabler2.xcodeproj">
+            BuildableName = "CoolerFace.app"
+            ReferencedContainer = "container:CoolerFace.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

@@ -11,14 +11,14 @@ or provisioning profile is used.
 
 Options:
   --bundle-id IDENTIFIER  iOS app bundle ID (watch ID becomes IDENTIFIER.watchkitapp)
-  --output PATH           IPA output path (default: build/ipa/HermesEnabler.ipa)
+  --output PATH           IPA output path (default: build/ipa/CoolerFace.ipa)
   -h, --help              Show this help
 EOF
 }
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
-bundle_id="com.example.HermesEnabler"
-output_path="$repo_root/build/ipa/HermesEnabler.ipa"
+bundle_id="com.coolerwave.CoolerFace"
+output_path="$repo_root/build/ipa/CoolerFace.ipa"
 
 while (($#)); do
     case "$1" in
@@ -72,13 +72,13 @@ cleanup() {
 trap cleanup EXIT
 
 derived_data="$temp_dir/DerivedData"
-app_path="$derived_data/Build/Products/Release-iphoneos/HermesCompanion.app"
+app_path="$derived_data/Build/Products/Release-iphoneos/CoolerFaceCompanion.app"
 staging_path="$temp_dir/staging"
 
 echo "Building iPhone app and embedded Watch app without code signing..."
 xcodebuild \
-    -project "$repo_root/HermesEnabler2.xcodeproj" \
-    -scheme HermesCompanion \
+    -project "$repo_root/CoolerFace.xcodeproj" \
+    -scheme CoolerFaceCompanion \
     -configuration Release \
     -destination 'generic/platform=iOS' \
     -derivedDataPath "$derived_data" \
@@ -96,7 +96,7 @@ fi
 watch_app="$(find "$app_path/Watch" -maxdepth 1 -type d -name '*.app' -print -quit 2>/dev/null || true)"
 if [[ -z "$watch_app" ]]; then
     echo "The built iPhone app does not contain an embedded Watch app." >&2
-    echo "Expected a Watch/*.app bundle inside HermesCompanion.app." >&2
+    echo "Expected a Watch/*.app bundle inside CoolerFaceCompanion.app." >&2
     exit 1
 fi
 
@@ -106,10 +106,10 @@ if find "$app_path" -name embedded.mobileprovision -print -quit | grep -q .; the
 fi
 
 mkdir -p "$staging_path/Payload" "$(dirname "$output_path")"
-ditto "$app_path" "$staging_path/Payload/HermesCompanion.app"
+ditto "$app_path" "$staging_path/Payload/CoolerFaceCompanion.app"
 ditto -c -k --sequesterRsrc --keepParent "$staging_path/Payload" "$output_path"
 
 echo "Created unsigned IPA: $output_path"
-echo "Embedded Watch app: Payload/HermesCompanion.app/Watch/$(basename "$watch_app")"
+echo "Embedded Watch app: Payload/CoolerFaceCompanion.app/Watch/$(basename "$watch_app")"
 echo "Bundle IDs: $bundle_id and $bundle_id.watchkitapp"
 echo "Sign the iPhone app and embedded Watch app with your own certificate and profiles before installing."

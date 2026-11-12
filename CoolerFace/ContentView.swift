@@ -35,7 +35,7 @@ struct ContentView: View {
                             .foregroundStyle(.secondary)
                     }
                 }
-                .navigationTitle("HermesEnabler")
+                .navigationTitle("CoolerFace")
                 .toolbar {
                     ToolbarItem(placement: .topBarTrailing) {
                         Button {

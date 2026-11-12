@@ -1,6 +1,6 @@
 //
 //  WatchConnectivityManager.swift
-//  HermesEnabler2
+//  CoolerFace
 //
 //
 
