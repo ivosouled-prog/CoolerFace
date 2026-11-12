@@ -5,6 +5,14 @@ import Observation
 final class ContentModel {
     var message = BQBackupExists() ? "Backup ready." : "Back up MobileGestalt before making changes."
     var hasBackup = BQBackupExists()
+    let support = WatchOSSupport.current
+    /// True after any successful MobileGestalt change, until the original
+    /// (initial) backup is restored. Drives the "roll back first" warnings.
+    var hasUnrevertedChanges = UserDefaults.standard.bool(forKey: ContentModel.unrevertedChangesKey) {
+        didSet { UserDefaults.standard.set(hasUnrevertedChanges, forKey: Self.unrevertedChangesKey) }
+    }
+    private static let unrevertedChangesKey = "CoolerFaceHasUnrevertedChanges"
+    static let originalBackupID = "initial"
     var showAccessAlert = false
     var toggleError: ToggleError?
     
@@ -102,6 +110,26 @@ final class ContentModel {
         }
     }
     
+    // MARK: - Backup tab
+
+    var lastBackupDate: Date? { backups.map(\.date).max() }
+
+    /// Creates the original MobileGestalt backup on its own the first time the
+    /// app runs on a supported build, so the user never starts without one.
+    /// Later writes are covered by BQCore, which snapshots MG before each write.
+    func autoBackupIfNeeded() {
+        refreshBackups()
+        guard support.isSupported, !hasBackup else { return }
+        perform(.backup)
+    }
+
+    var canRollBack: Bool { hasBackup && support.isSupported }
+
+    /// Restores the original (initial) backup. BQCore snapshots the current MG first.
+    func rollBack() {
+        perform(.restoreBackup(Self.originalBackupID))
+    }
+
     func showNextExternalBackup() {
         guard !showExternalImportConfirmation,
               let pending = WatchConnectivityManager.shared.nextPendingBackup() else { return }
@@ -215,7 +243,20 @@ final class ContentModel {
             if !success { toggleFailed = true }
             return success
         }
-        if !BQCoreInit() {
+        let isBackupOnly: Bool
+        switch action {
+        case .backup, .manualBackup: isBackupOnly = true
+        default: isBackupOnly = false
+        }
+        // Version gate: nothing that writes MobileGestalt (including restores)
+        // runs on a build without a verified layout. Taking a backup only reads.
+        if !isBackupOnly && !support.isSupported {
+            message = String(localized: "watchOS \(support.version) (\(support.build)) is not supported. No changes were made.")
+            toggleError = ToggleError(message: message)
+            return
+        }
+        let coreReady = BQCoreInit()
+        if !coreReady {
             toggleFailed = shouldAlertOnFailure
             result = "MobileGestalt access is unavailable on this device."
         } else {
@@ -386,6 +427,13 @@ final class ContentModel {
         }
         refreshBackups()
         message = result
+        if coreReady && !isBackupOnly && !toggleFailed && error == nil {
+            if case .restoreBackup(let identifier) = action {
+                if identifier == Self.originalBackupID { hasUnrevertedChanges = false }
+            } else {
+                hasUnrevertedChanges = true
+            }
+        }
         if toggleFailed {
             let reason = (error as String?) == BQNoSandboxTokenError
             ? String(localized: "An App Group ID may be missing, or this watchOS version may be incompatible. Check the app's App Group configuration and watchOS version.")

@@ -1,6 +1,221 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%@\n\n%@" : {
+      "shouldTranslate" : false
+    },
+    "All Backups" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Все бэкапы"
+          }
+        }
+      }
+    },
+    "An App Group ID may be missing, or this watchOS version may be incompatible. Check the app's App Group configuration and watchOS version.\n\n%@" : {
+      "localizations" : {
+        "de" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Möglicherweise fehlt eine App Group-ID oder diese watchOS-Version ist möglicherweise nicht kompatibel. Überprüfen Sie die App Group-Konfiguration und die watchOS-Version der App.\n\n%@"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Es posible que falte un ID de App Group o que esta versión de watchOS sea incompatible. Verifique la configuración App Group de la aplicación y la versión watchOS.\n\n%@"
+          }
+        },
+        "fr" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Un ID App Group peut être manquant ou cette version de watchOS peut être incompatible. Vérifiez la configuration App Group et la version watchOS de l'application.\n\n%@"
+          }
+        },
+        "ja" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Group ID が欠落しているか、この watchOS バージョンに互換性がない可能性があります。アプリの App Group 構成と watchOS バージョンを確認してください。\n\n%@"
+          }
+        },
+        "ko" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Group ID가 누락되었거나 이 watchOS 버전이 호환되지 않을 수 있습니다. 앱의 App Group 구성과 watchOS 버전을 확인하세요.\n\n%@"
+          }
+        },
+        "pt" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Um ID App Group pode estar faltando ou esta versão watchOS pode ser incompatível. Verifique a configuração App Group do aplicativo e a versão watchOS.\n\n%@"
+          }
+        },
+        "zh-Hans" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "App Group ID 可能丢失，或者此 watchOS 版本可能不兼容。检查应用程序的App Group配置和watchOS版本。\n\n%@"
+          }
+        },
+        "zh-Hant" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "可能缺少 App Group ID，或此 watchOS 版本不相容。請檢查 app 的 App Group 設定與 watchOS 版本。\n\n%@"
+          }
+        }
+      }
+    },
+    "Back Up Now" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сделать бэкап"
+          }
+        }
+      }
+    },
+    "Backup" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бэкап"
+          }
+        }
+      }
+    },
+    "Before Deleting CoolerFace" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перед удалением CoolerFace"
+          }
+        }
+      }
+    },
+    "Changes applied. Roll back on the Backup tab before deleting CoolerFace." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Изменения применены. Перед удалением CoolerFace откатитесь на вкладке «Бэкап»."
+          }
+        }
+      }
+    },
+    "Changes are currently applied." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сейчас изменения применены."
+          }
+        }
+      }
+    },
+    "Do not delete CoolerFace until you can roll back to the original backup." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Не удаляйте CoolerFace, пока не сможете откатиться к исходному бэкапу."
+          }
+        }
+      }
+    },
+    "Last Backup" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Последний бэкап"
+          }
+        }
+      }
+    },
+    "MobileGestalt is backed up automatically on first launch and before every change." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бэкап MobileGestalt делается автоматически при первом запуске и перед каждым изменением."
+          }
+        }
+      }
+    },
+    "No backup yet." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бэкапа пока нет."
+          }
+        }
+      }
+    },
+    "Restores the original MobileGestalt from your first backup. Restart the watch afterwards." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Возвращает исходный MobileGestalt из первого бэкапа. После этого перезапустите часы."
+          }
+        }
+      }
+    },
+    "Roll Back" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откатить"
+          }
+        }
+      }
+    },
+    "Roll back first, then delete the app. Deleting it with changes still applied removes the backups and leaves MobileGestalt modified." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сначала откатитесь, потом удаляйте приложение. Если удалить его с применёнными изменениями, бэкапы пропадут, а MobileGestalt останется изменённым."
+          }
+        }
+      }
+    },
+    "Roll back to the original MobileGestalt?" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Откатить MobileGestalt к исходному?"
+          }
+        }
+      }
+    },
+    "Roll back to the original backup before trying again or deleting CoolerFace." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перед повторной попыткой или удалением CoolerFace откатитесь к исходному бэкапу."
+          }
+        }
+      }
+    },
+    "The current MG will be backed up automatically first. Restart the watch after rolling back." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Перед откатом текущий MG будет автоматически сохранён. После отката перезапустите часы."
+          }
+        }
+      }
+    },
     "The watch's confirmed original DeviceBrand is already Hermès; disabling it would not restore a non-Hermès value." : {
       "localizations" : {
         "ko" : {
@@ -3429,6 +3644,16 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "類別 38"
+          }
+        }
+      }
+    },
+    "This watchOS version is not supported. CoolerFace will not change anything on it." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Эта версия watchOS не поддерживается. CoolerFace ничего на ней не изменит."
           }
         }
       }
@@ -14469,6 +14694,36 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "錶面"
+          }
+        }
+      }
+    },
+    "watchOS %@" : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "watchOS %@"
+          }
+        }
+      }
+    },
+    "watchOS %@ (%@) is not supported. Changes are disabled." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "watchOS %@ (%@) не поддерживается. Изменения отключены."
+          }
+        }
+      }
+    },
+    "watchOS %@ (%@) is not supported. No changes were made." : {
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "watchOS %@ (%@) не поддерживается. Ничего не изменено."
           }
         }
       }
