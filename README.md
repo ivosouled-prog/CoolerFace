@@ -1,4 +1,3 @@
-Основано на [HermesEnabler](https://github.com/pookjw/HermesEnabler) от pookjw
 
 # CoolerFace
 
