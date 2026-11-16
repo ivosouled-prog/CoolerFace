@@ -1,0 +1,22 @@
+name: Build CoolerFace IPA
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+      - name: Descargar código
+        uses: actions/checkout@v4
+
+      - name: Dar permisos y compilar IPA
+        run: |
+          chmod +x scripts/create_ipa.sh
+          ./scripts/create_ipa.sh
+
+      - name: Subir CoolerFace.ipa
+        uses: actions/upload-artifact@v4
+        with:
+          name: CoolerFace-IPA
+          path: build/ipa/CoolerFace.ipa
