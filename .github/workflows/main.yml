@@ -10,6 +10,18 @@ jobs:
       - name: Descargar código
         uses: actions/checkout@v4
 
+      - name: Seleccionar Xcode 27 o ajustar compatibilidad
+        run: |
+          if [ -d "/Applications/Xcode_27.app" ]; then
+            sudo xcode-select -s /Applications/Xcode_27.app/Contents/Developer
+          elif [ -d "/Applications/Xcode_27.0.app" ]; then
+            sudo xcode-select -s /Applications/Xcode_27.0.app/Contents/Developer
+          else
+            sed -i '' 's/objectVersion = 110;/objectVersion = 77;/g' CoolerFace.xcodeproj/project.pbxproj
+            sed -i '' 's/preferredProjectObjectVersion = 110;/preferredProjectObjectVersion = 77;/g' CoolerFace.xcodeproj/project.pbxproj
+          fi
+          xcodebuild -version
+
       - name: Dar permisos y compilar IPA
         run: |
           chmod +x scripts/create_ipa.sh
